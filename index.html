@@ -8,14 +8,19 @@
 
         h1 {text-align: center;color: white; font-size:5em; font-family: 'Pacifico', cursive;}
 
+        .gallery {display: flex;justify-content: space-between;align-items: center;padding: 20px;}
+            
          img {display: block; margin: 0 auto;  width: 20%; max-width: 250px;height: auto; transition: transform 0.5s ease;}
          img:hover {transform: scaleX(-1);
     </style>
 </head>
 <body>
     <h1><b>Gwyn's Hawaiian Gallery</b></h1>
-    <img src="IMG_4596.jpg" alt="plane" class="right">
-    <img src="IMG_4602.jpg" alt="hotelview" class="center">
-    <img src="IMG_4661.jpg" alt="peralharbor" class="left">
+    
+  <div class="gallery">
+        <img src="IMG_4596.jpg" alt="plane">
+        <img src="IMG_4602.jpg" alt="hotel view">
+        <img src="IMG_4661.jpg" alt="pearl harbor">
+    </div>
 </body>
 </html>
