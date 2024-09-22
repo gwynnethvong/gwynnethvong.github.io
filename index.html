@@ -4,26 +4,42 @@
     <meta charset="utf-8">
     <title>Gwyn's Hawaiian Gallery</title>
     <style>
-        body { background: linear-gradient(to bottom, #ffcc00, #ff6699, #66ccff, #0072ff); margin: 0; height: 100vh;}
+        body { background: linear-gradient(to bottom, #ffcc00, #ff6699, #66ccff, #0072ff); margin: 0; height: 100vh; }
 
-        h1 {text-align: center;color: white; font-size:5em; font-family: 'Pacifico', cursive;}
+        h1 { text-align: center; color: white; font-size: 5em; font-family: 'Pacifico', cursive; }
 
-         .gallery {display: grid;grid-template-columns: repeat(3, 1fr);grid-gap: 20px;justify-items: center;padding: 20px;]
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+            justify-items: center;
+            padding: 20px;
+        }
         
-        img, video {width: 100%; max-width: 150px;height:150;border: 10px solid #ffccff;border-radius: 15px;padding: 10px;box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);transition: transform 0.5s ease;object-fit:cover;}
+        img, video {
+            width: 100%;
+            max-width: 150px; /* Set maximum width for images and video */
+            height: 150px; /* Set height for uniformity */
+            border: 10px solid #ffccff;
+            border-radius: 15px;
+            padding: 10px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.5s ease;
+            object-fit: cover;
+        }
 
-         img:hover {transform: scaleX(-1);
+        img:hover, video:hover { transform: scaleX(-1); }
     </style>
 </head>
 <body>
     <h1><b>Gwyn's Hawaiian Gallery</b></h1>
     
-  <div class="gallery">
+    <div class="gallery">
         <img src="IMG_4596.jpg" alt="plane">
         <img src="IMG_4602.jpg" alt="hotel view">
         <img src="IMG_4661.jpg" alt="pearl harbor">
         <img src="IMG_4671.jpg" alt="pearl harbor with flags">
-        <video src="IMG_4654.mov" width="320" height="240" controls></video>
+        <video src="IMG_4654.mov" controls></video>
         <img src="IMG_4747.jpg" alt="on a canoe">
         <img src="IMG_4737.jpg" alt="famous house">
         <img src="IMG_4727.jpg" alt="mountain view">
